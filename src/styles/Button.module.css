@@ -1,0 +1,85 @@
+.btn {
+  padding: 2% 2%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  background: #000080;
+  background: -webkit-linear-gradient(bottom, #000080, #540101);
+  background: -moz-linear-gradient(bottom, #000080, #540101);
+  background: linear-gradient(to top, #000080, #540101);
+  border: 5px solid #ece6e6;
+  cursor: pointer;
+}
+
+.cl_btn_2 {
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  border: none;
+}
+.cl_btn_2 div {
+  cursor: pointer;
+  position: relative;  
+  height: 68px;
+  width: 50px;
+}
+.cl_btn_2 .leftright {
+  height: 4px;
+  width: 40px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #337AB7;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.cl_btn_2 .rightleft {
+  height: 4px;
+  width: 40px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #337AB7;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+}
+.cl_btn_2 .close_btn {
+  margin: 54px 0 0 -5px;
+  position: absolute;
+  color: #337AB7;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all .3s ease-in;
+  opacity: 0; 
+}
+.cl_btn_2 div:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: rgb(44, 15, 170);
+}
+.cl_btn_2 div:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: rgb(44, 15, 170);
+}
+.cl_btn_2 div:hover .close-btn {
+  opacity: 1;
+}
+
+@media (max-width: 768px) { 
+  .btn {
+    margin-right: 0;
+    padding: 3%;
+  }
+}
+@media (max-width: 390px) { 
+  .btn {
+    margin-right: 0;
+    padding: 3%;
+    font-size: 12px;
+  }
+}

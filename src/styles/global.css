@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  z-index: -999;
+}
+
+body {
+  pointer-events: auto !important;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfafa;
+}
+
+.message {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}

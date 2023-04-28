@@ -1,0 +1,19 @@
+.contacts__container {
+  width: 80vw;
+  margin: 3% auto;
+  display: flex;
+  gap: 10%;
+  background: #fdfafa;
+}
+@media(max-width: 900px) {
+  .contacts__container {
+    width: 90vw;
+    gap: 3%;
+  }
+}
+@media(max-width: 768px) {
+  .contacts__container {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}

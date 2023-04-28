@@ -1,0 +1,19 @@
+.main__about__container {
+  max-width: 100%;
+  padding: 5%;
+  background: linear-gradient(to top, #540101, #000080);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main__about_company {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 1000px) {
+  .main__about_company {
+    flex-wrap: wrap;
+    padding: 5%;
+  }
+}

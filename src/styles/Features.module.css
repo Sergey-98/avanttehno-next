@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Reza';
+  src: url(../assets/fonts/RezaZulmiSerif.ttf);
+}
+.features_wrapper {
+  padding: 5%;
+  border: 3px solid #000080;
+  background: white;
+  font-size: 30px;
+}
+.features_title {
+  font-family: 'Reza', serif;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .features_wrapper {
+    margin: 0 auto;
+    width: 70vw;
+  }
+  .features_title {
+    font-size: 35px;
+    margin-bottom: 5%;
+  }
+  .features_textwrapper_text {
+    font-size: 25px;
+  }
+  .features_textwrapper_title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .features_title {
+    font-size: 30px;
+  }
+  .features_textwrapper_text {
+    font-size: 20px;
+  }
+  .features_textwrapper_title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 450px) {
+  .features_wrapper {
+    width: 82vw;
+  }
+}

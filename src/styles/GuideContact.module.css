@@ -1,0 +1,42 @@
+.guide__main_person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+.person_title {
+  color: #000080;
+  font-weight: 700;
+  font-size: 19px;
+  word-wrap: nowrap;
+}
+.guide__persons_title {
+  color: #000080;
+  font-weight: 700;
+  font-size: 22px;
+}
+.guide__contact_container {
+  margin-left: 10%;  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.person_text_phone {
+  color: #000000;
+}
+
+@media (max-width: 1027px) {
+  .person_title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .person_title {
+    font-size: 19px;
+  }
+}
+@media (max-width: 365px) {
+  .person_title {
+    font-size: 17px;
+  }
+}

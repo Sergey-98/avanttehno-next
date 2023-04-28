@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Reza';
+  src: url(../assets/fonts/RezaZulmiSerif.ttf);
+}
+.partners_section {
+  padding: 1% 0 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(75, 78, 255, 0.05);
+  box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+}
+.partners_title {
+  margin-bottom: 2%;
+  font-family: 'Reza';
+  font-size: 40px;
+}
+.partners_section__cards {
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(75, 78, 255, 0);
+}
+.partners_section__cards::-webkit-scrollbar {
+  width: 5px;
+}
+.partners_section__cards::-webkit-scrollbar-track {
+  background: rgba(75, 78, 255, 0);
+}
+.partners_section__cards::-webkit-scrollbar-thumb {
+  background: rgba(75, 78, 255, 0);
+  border-radius: 20px;
+  border: 3px solid rgba(75, 78, 255, 0);
+}
+
+@media (max-width: 1200px) { 
+  .partners_title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 930px) {
+  .partners_title {
+    font-size: 30px;
+  } 
+}
+@media (max-width: 600px) {
+  .partners_title {
+    padding-top: 20px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 450px) { 
+  .partners_section {
+    padding: 1% 0 7% 0;
+  }
+  .partners_title {
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .partners__img {
+    width: 30%;
+  } 
+  .partners_title {
+    font-size: 18px;
+  }
+}

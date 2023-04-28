@@ -1,0 +1,13 @@
+.information__contact_container {
+  display: flex;
+  gap: 7px;
+}
+.information__contact {
+  display: flex; 
+  flex-direction: column;
+}
+.information__title {
+  color: #000080;
+  font-weight: 700;
+  font-size: 22px;
+}

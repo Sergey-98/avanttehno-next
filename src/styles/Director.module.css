@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Reza';
+  src: url(../assets/fonts/RezaZulmiSerif.ttf);
+}
+.contacts__director {
+  width: 40vw;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #000080;
+  background: white;
+  font-size: 30px;
+}
+
+.director__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  color: black;
+}
+.director__title {
+  text-align: center;
+  margin-bottom: 5%;
+  color: black;
+  font-family: 'Reza', serif;
+  font-size: 40px;
+}
+.director__img_wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: white;
+}
+.director__img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/img/Director1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.director__text_name {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.director__text_container {
+  font-size: 30px;
+  width: 70%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2vw;
+  justify-content: center;
+  flex-direction: column;
+}
+.director__text_quote {
+  margin-bottom: 5%;
+}
+
+@media (max-width: 1200px) {
+  .director__text_container {
+    font-size: 25px;
+  }
+  .director__title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .contacts__director {
+    margin: 0 auto;
+    width: 70vw;
+  }
+}
+@media (max-width: 768px) {
+  .director__title {
+    font-size: 23px;
+  }
+  .director__text_container {
+    font-size: 20px;
+  }
+}
+@media (max-width: 450px) {
+  .contacts__director {
+    width: 90vw;
+  }
+}

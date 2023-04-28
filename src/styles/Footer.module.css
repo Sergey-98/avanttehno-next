@@ -1,0 +1,23 @@
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 100%;
+  border-top: 15px solid #000000; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(180deg, #010130 41%, #000000 100%);
+  font-size: 1.2em;
+}
+@media (max-width: 1055px) { 
+  .footer__container {
+    flex-wrap: wrap;
+    row-gap: 2em;
+  }
+}
+@media (max-width: 400px) {
+  .footer__container {
+    row-gap: 1.5em;
+  }
+}

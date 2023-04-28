@@ -1,0 +1,42 @@
+.b_hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .b_hamburger .h_line {
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    margin: 10px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+  .b_hamburger {
+    right: 10%;
+    display: block;
+    background-color: inherit;
+    margin: 20px 0;
+    /* margin-right: 1%; */
+    width: 50px;
+    height: 50px;
+    z-index: 900;
+  }
+  .b_hamburger:hover {
+    cursor: pointer;
+  }
+  .b_hamburger.is_active .line2 {
+    opacity: 0;
+  }
+
+  .b_hamburger.is_active .line1 {
+    transform: translateY(13px) rotate(45deg);
+  }
+
+  .b_hamburger.is_active .line3 {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+}

@@ -1,0 +1,143 @@
+.modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 575;
+}
+.modal_container__form {
+  width: 60%;
+  height: 60%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #b69696;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.modal_title, .modal_subtitle {
+  color: #000000;
+  width: 50%;
+  text-align: center;
+  z-index: 555;
+  font-size: 20px;
+}
+.modal_close {
+  width: 50px; 
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 45%;
+  left: 45%;
+  margin: auto;
+  z-index: 557;
+}
+
+.modal_close:hover {
+  cursor: pointer;
+}
+.input__text {
+  width: 28vw;
+  padding: 11px;
+  border: 1px solid #eee;
+  font-size: 0.9em;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.input__text:focus {
+  background-color: #50508a;
+  color: #ffffff;
+}
+.input__text:focus::placeholder {
+  color: #ffffff;
+}
+.input__submit {
+  margin-top: 3%;
+  cursor: pointer;
+  width: 30%;
+  align-self: center;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #000080;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-size: 20px;
+  color: #4682B4;
+}
+.input__submit:hover {
+  width: 25%;
+  font-size: 25px;
+  background: #000080;
+}
+.label_form {
+  width: 28vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media(max-width: 768px) {
+  .modal_container__form {
+    width: 70%;
+  }
+  .input__text {
+    width: 50vw;
+    padding: 8px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  }
+  .label_form {
+    width: 50vw;
+  }
+  .modal_close {
+    left: 55%;
+  }
+}
+@media(max-width: 500px) {
+  .modal_container__form {
+    width: 90%;
+    height: 55%;
+  }
+  .modal_close {
+    left: 60%;
+    bottom: 50%;
+  }
+  .modal_title {
+    width: 80%;
+    font-size: 19px;
+  }
+  .modal_subtitle {
+    width: 80%;
+    font-size: 16px;
+  }
+  .modal_container__form {
+    height: 60%;
+  }
+  .input__text {
+    width: 70vw;
+  }
+  .label_form {
+    width: 80vw;
+    font-size: 15px;
+  }
+}

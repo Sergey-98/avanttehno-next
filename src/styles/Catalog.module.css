@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Reza';
+  src: url(../assets/fonts/RezaZulmiSerif.ttf);
+}
+
+.main__title_wrapper {
+  display: flex;
+  justify-content: center;
+  background: rgba(75, 78, 255, 0.05);
+  padding: 50px 150px;
+}
+
+.main__title_wrapper .main__catalog_title {
+  font-family: 'Merriweather', serif;
+  position: relative;
+  color: #000000;
+  font-family: 'Reza';
+  font-size: 50px;
+  font-weight: normal;
+  padding: 8px 20px 7px 20px;
+  border-top: 4px solid;
+  border-left: 4px solid;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+.main__title_wrapper .main__catalog_title:before {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: -28px;
+  left: -28px;
+  border: 4px solid #000000;
+  box-sizing: border-box;
+}
+@media (max-width: 1200px) { 
+  .main__title_wrapper {
+    padding: 50px 100px;
+  }
+  .main__title_wrapper .main__catalog_title {
+    font-size: 35px;
+  }
+}
+@media (max-width: 930px) {
+  .main__title_wrapper .main__catalog_title {
+    font-size: 35px;
+  } 
+}
+@media (max-width: 600px) {
+  .main__title_wrapper {
+    padding: 40px 70px;
+  }
+  .main__title_wrapper .main__catalog_title {
+    font-size: 30px;
+  }
+  .main__title_wrapper .main__catalog_title:before {
+    width: 20px;
+    height: 20px;
+    top: -20px;
+    left: -20px;
+  }
+}
+@media (max-width: 450px) { 
+  .main__title_wrapper {
+    padding: 30px 60px;
+  }
+  .main__title_wrapper .main__catalog_title {
+    font-size: 25px;
+  }
+  .main__title_wrapper .main__catalog_title:before {
+    width: 18px;
+    height: 18px;
+    top: -18px;
+    left: -18px;
+  }
+}
+@media (max-width: 340px) { 
+  .main__title_wrapper .main__catalog_title {
+    font-size: 25px;
+  }
+}
